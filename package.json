@@ -20,12 +20,15 @@
     "react-native-custom-picker": "^0.4.0",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-modal": "^11.5.6",
+    "react-native-onesignal": "^3.9.0",
     "react-native-progress-timer": "^1.0.1",
     "react-native-progress-wheel": "^1.0.5",
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.7.0",
     "react-native-svg": "^12.1.0",
+    "react-native-system-setting": "^1.7.4",
+    "react-native-webview": "8.0.0",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
@@ -35,10 +38,10 @@
     "babel-jest": "^26.3.0",
     "eslint": "^7.7.0",
     "jest": "^26.4.1",
-    "metro-react-native-babel-preset": "^0.63.0",
-    "react-test-renderer": "16.13.1",
     "lodash": "^4.17.15",
+    "metro-react-native-babel-preset": "^0.63.0",
     "react-redux": "^7.2.0",
+    "react-test-renderer": "16.13.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.1.0"

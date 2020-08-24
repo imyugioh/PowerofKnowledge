@@ -19,6 +19,8 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* PowerofKnowledgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PowerofKnowledgeTests.m */; };
 		59C23A186B3044469EE3AC60 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8E96743524B5F8CE58090 /* Poppins-Bold.ttf */; };
+		660A5EAA24F4458B0085BA37 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660A5EA924F4458B0085BA37 /* NotificationService.swift */; };
+		660A5EAE24F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 660A5EA724F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7038E83087CFBC5AA4D93C93 /* libPods-PowerofKnowledge-PowerofKnowledgeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E9B43C98B579763BFB6AC /* libPods-PowerofKnowledge-PowerofKnowledgeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D9AF7246DD8DD6D028CB666D /* libPods-PowerofKnowledge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 352C50B2FBC81CD3DD20026F /* libPods-PowerofKnowledge-tvOSTests.a */; };
@@ -40,7 +42,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "PowerofKnowledge-tvOS";
 		};
+		660A5EAC24F4458B0085BA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 660A5EA624F4458B0085BA37;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		660A5EB224F4458B0085BA37 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				660A5EAE24F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -61,6 +84,10 @@
 		467A27C7CABF472AB2B5011F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		4B0E52E5008959CE427E8935 /* Pods-PowerofKnowledge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerofKnowledge-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PowerofKnowledge-tvOS/Pods-PowerofKnowledge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4FB3337C3F761DEF78E6A711 /* Pods-PowerofKnowledge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerofKnowledge.debug.xcconfig"; path = "Target Support Files/Pods-PowerofKnowledge/Pods-PowerofKnowledge.debug.xcconfig"; sourceTree = "<group>"; };
+		660A5EA224F445690085BA37 /* PowerofKnowledge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PowerofKnowledge.entitlements; path = PowerofKnowledge/PowerofKnowledge.entitlements; sourceTree = "<group>"; };
+		660A5EA724F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		660A5EA924F4458B0085BA37 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		660A5EAB24F4458B0085BA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AE8E96743524B5F8CE58090 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		76D01918C385423D39B27259 /* libPods-PowerofKnowledge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PowerofKnowledge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PowerofKnowledge/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,6 +135,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		660A5EA424F4458B0085BA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -131,6 +165,7 @@
 		13B07FAE1A68108700A75B9A /* PowerofKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				660A5EA224F445690085BA37 /* PowerofKnowledge.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -153,6 +188,15 @@
 				352C50B2FBC81CD3DD20026F /* libPods-PowerofKnowledge-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		660A5EA824F4458B0085BA37 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				660A5EA924F4458B0085BA37 /* NotificationService.swift */,
+				660A5EAB24F4458B0085BA37 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		8116F2F32B46400C9D58C297 /* Resources */ = {
@@ -178,6 +222,7 @@
 				13B07FAE1A68108700A75B9A /* PowerofKnowledge */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PowerofKnowledgeTests */,
+				660A5EA824F4458B0085BA37 /* OneSignalNotificationServiceExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				EA1B33978CEEBA9F06B303B7 /* Pods */,
@@ -195,6 +240,7 @@
 				00E356EE1AD99517003FC87E /* PowerofKnowledgeTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* PowerofKnowledge-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* PowerofKnowledge-tvOSTests.xctest */,
+				660A5EA724F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,10 +294,12 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				B7BC063FD07EA11F3150B0EE /* [CP] Copy Pods Resources */,
+				660A5EB224F4458B0085BA37 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				660A5EAD24F4458B0085BA37 /* PBXTargetDependency */,
 			);
 			name = PowerofKnowledge;
 			productName = PowerofKnowledge;
@@ -297,12 +345,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* PowerofKnowledge-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		660A5EA624F4458B0085BA37 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660A5EAF24F4458B0085BA37 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				660A5EA324F4458B0085BA37 /* Sources */,
+				660A5EA424F4458B0085BA37 /* Frameworks */,
+				660A5EA524F4458B0085BA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 660A5EA724F4458B0085BA37 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -312,6 +378,14 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = A59ZB5GG73;
 						LastSwiftMigration = 1120;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -321,6 +395,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					660A5EA624F4458B0085BA37 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = A59ZB5GG73;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -341,6 +420,7 @@
 				00E356ED1AD99517003FC87E /* PowerofKnowledgeTests */,
 				2D02E47A1E0B4A5D006451C7 /* PowerofKnowledge-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* PowerofKnowledge-tvOSTests */,
+				660A5EA624F4458B0085BA37 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -374,6 +454,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660A5EA524F4458B0085BA37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -610,6 +697,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		660A5EA324F4458B0085BA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660A5EAA24F4458B0085BA37 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -622,6 +717,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* PowerofKnowledge-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		660A5EAD24F4458B0085BA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 660A5EA624F4458B0085BA37 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 660A5EAC24F4458B0085BA37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -673,8 +773,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FB3337C3F761DEF78E6A711 /* Pods-PowerofKnowledge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PowerofKnowledge/PowerofKnowledge.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A59ZB5GG73;
 				ENABLE_BITCODE = NO;
@@ -697,8 +800,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB2B8967FEE803A09D403FCE /* Pods-PowerofKnowledge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PowerofKnowledge/PowerofKnowledge.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A59ZB5GG73;
 				INFOPLIST_FILE = PowerofKnowledge/Info.plist;
@@ -822,6 +928,63 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerofKnowledge-tvOS.app/PowerofKnowledge-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		660A5EB024F4458B0085BA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = A59ZB5GG73;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.janet.PowerofKnowledge.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		660A5EB124F4458B0085BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = A59ZB5GG73;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.janet.PowerofKnowledge.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -973,6 +1136,15 @@
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
 				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660A5EAF24F4458B0085BA37 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660A5EB024F4458B0085BA37 /* Debug */,
+				660A5EB124F4458B0085BA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

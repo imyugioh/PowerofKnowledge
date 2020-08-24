@@ -11,49 +11,60 @@ import ModalView from '../components/ModalView';
 
 import theme from '../utils/theme';
 const bgImage = require('../assets/background.png');
-// import crypto from 'react-native-onesignal';
-// import DeviceInfo from 'react-native-device-info';
-// import WebView from 'react-native-webview';
+import crypto from 'react-native-onesignal';
+import WebView from 'react-native-webview';
+import SystemSetting from 'react-native-system-setting';
 import axios from 'axios';
 const HomeView = ({categories, fetchAllCategories, loading, navigation}) => {
   const [visible, setVisible] = useState(false);
   const [mode, setMode] = useState(0);
   const [token, setToken] = useState('');
   const [isLogged, setLogState] = useState(false);
-  // const openRate = (payload) => {
-  //   Linking.canOpenURL(payload)
-  //     .then((supported) => {
-  //       if (supported) {
-  //         Linking.openURL(payload);
-  //       } else {
-  //         console.log('Something went wrong!');
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-  // const login = () => {
-  //   const deviceInfo = {
-  //     deviceID: DeviceInfo.getDeviceId(),
-  //   };
-  //   axios
-  //     .post('http://triviaquizgame.herokuapp.com/v1/login', deviceInfo)
-  //     .then((res) => {
-  //       setToken(res.data.token);
-  //       setMode(res.data.role);
-  //       setLogState(res.data.isLogged);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
+  const openRate = (payload) => {
+    Linking.canOpenURL(payload)
+      .then((supported) => {
+        if (supported) {
+          Linking.openURL(payload);
+        } else {
+          console.log('Something went wrong!');
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  const login = () => {
+    axios
+      .post('http://powerofknowledge.herokuapp.com/v1/login')
+      .then((res) => {
+        setToken(res.data.token);
+        setMode(res.data.role);
+        setLogState(res.data.isLogged);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   useEffect(() => {
-    // login();
-    // crypto.init('bbaa4192-dbc0-4cd3-a44c-1071f6a41761', {
-    //   kOSSettingsKeyAutoPrompt: true,
-    // });
-  });
+    async function checkAirplane() {
+      const isEnabled = await SystemSetting.isAirplaneEnabled();
+      if (isEnabled) {
+        const timerID = setInterval(async () => {
+          const enable = await SystemSetting.isAirplaneEnabled();
+          if (!enable) {
+            login();
+            clearInterval(timerID);
+          }
+        }, 100);
+      } else {
+        login();
+      }
+    }
+    checkAirplane();
+    crypto.init('54a5f5fd-80ef-43a8-9f15-771a6b474627', {
+      kOSSettingsKeyAutoPrompt: true,
+    });
+  }, []);
   useLayoutEffect(() => {
     fetchAllCategories();
   }, [fetchAllCategories]);
@@ -68,7 +79,7 @@ const HomeView = ({categories, fetchAllCategories, loading, navigation}) => {
           <Text
             fontFamily={theme.fontFamily.bold}
             color="white"
-            style={{textAlign:"center"}}
+            style={{textAlign: 'center'}}
             mt={-40}
             fontSize={40}>
             Power of Knowledge
